@@ -60,7 +60,8 @@ jobs:
     dev-deploy:
         name: DEV Deployment
         runs-on: ubuntu-latest
-        environment: development
+        environment: 
+          name: development
         needs: docker
         steps:
         - name: Checkout code
